@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.RuntimeFilesDownloaderEditor.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"RuntimeFilesDownloaderEditor.cpp.obj"
+		]
+	}
+}

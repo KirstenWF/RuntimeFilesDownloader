@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\source\\runtimefilesdownloader\\private\\basefilesdownloader.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\dev\\kauri-ue5\\ue5\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\runtimefilesdownloader\\definitions.runtimefilesdownloader.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\source\\runtimefilesdownloader\\public\\basefilesdownloader.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\http.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\httpmodule.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttprequest.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpbase.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpresponse.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpresponsecodes.inl",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\interfaces\\ihttpresponsecodes.inl",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\platformhttp.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\windows\\windowsplatformhttp.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\online\\http\\public\\genericplatform\\genericplatformhttp.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\core\\public\\misc\\engineversioncomparison.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\intermediate\\build\\win64\\unrealeditor\\inc\\runtimefilesdownloader\\uht\\basefilesdownloader.generated.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\source\\runtimefilesdownloader\\public\\runtimefilesdownloaderdefines.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\engine\\public\\imageutils.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\source\\runtimefilesdownloader\\public\\runtimechunkdownloader.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

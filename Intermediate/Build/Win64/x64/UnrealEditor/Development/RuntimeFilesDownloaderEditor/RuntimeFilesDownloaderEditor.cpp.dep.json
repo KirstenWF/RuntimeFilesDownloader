@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\source\\runtimefilesdownloadereditor\\private\\runtimefilesdownloadereditor.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\dev\\kauri-ue5\\ue5\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\runtimefilesdownloadereditor\\definitions.runtimefilesdownloadereditor.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\source\\runtimefilesdownloadereditor\\public\\runtimefilesdownloadereditor.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\core\\public\\misc\\engineversioncomparison.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

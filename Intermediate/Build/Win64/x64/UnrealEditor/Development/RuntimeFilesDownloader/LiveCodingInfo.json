@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.RuntimeFilesDownloader.cpp.obj": [
+			"BaseFilesDownloader.gen.cpp.obj",
+			"FileToMemoryDownloader.gen.cpp.obj",
+			"FileToStorageDownloader.gen.cpp.obj",
+			"RuntimeFilesDownloader.init.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"BaseFilesDownloader.cpp.obj",
+			"FileToMemoryDownloader.cpp.obj",
+			"FileToStorageDownloader.cpp.obj",
+			"RuntimeChunkDownloader.cpp.obj",
+			"RuntimeFilesDownloader.cpp.obj"
+		]
+	}
+}

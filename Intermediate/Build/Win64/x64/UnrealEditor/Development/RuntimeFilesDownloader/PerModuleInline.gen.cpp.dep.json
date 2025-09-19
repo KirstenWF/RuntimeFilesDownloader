@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\runtimefilesdownloader\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\dev\\kauri-ue5\\ue5\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\plugins\\runtimefilesdownloader\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\runtimefilesdownloader\\definitions.runtimefilesdownloader.h",
+            "d:\\dev\\kauri-ue5\\ue5\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
