@@ -1,15 +1,23 @@
-// Georgy Treshchev 2022.
+// Georgy Treshchev 2024.
 
 #pragma once
 
 #include "Http.h"
+#include "Templates/SharedPointer.h"
+#include "Misc/EngineVersionComparison.h"
 #include "BaseFilesDownloader.generated.h"
 
 /** Dynamic delegate to track download progress */
-DECLARE_DYNAMIC_DELEGATE_TwoParams(FOnDownloadProgress, int32, BytesReceived, int32, ContentLength);
+DECLARE_DYNAMIC_DELEGATE_ThreeParams(FOnDownloadProgress, int64, BytesReceived, int64, ContentLength, float, ProgressRatio);
 
 /** Static delegate to track download progress */
-DECLARE_DELEGATE_TwoParams(FOnDownloadProgressNative, int32, int32);
+DECLARE_DELEGATE_ThreeParams(FOnDownloadProgressNative, int64, int64, float);
+
+/** Dynamic delegate to obtain download content length */
+DECLARE_DYNAMIC_DELEGATE_OneParam(FOnGetDownloadContentLength, int64, ContentLength);
+
+/** Static delegate to obtain download content length */
+DECLARE_DELEGATE_OneParam(FOnGetDownloadContentLengthNative, int64);
 
 class UTexture2D;
 
@@ -22,18 +30,11 @@ class RUNTIMEFILESDOWNLOADER_API UBaseFilesDownloader : public UObject
 	GENERATED_BODY()
 
 protected:
-
 	/** Static delegate to track download progress */
-	FOnDownloadProgressNative OnDownloadProgressNative;
-
-	/** Dynamic delegate to track download progress */
-	FOnDownloadProgress OnDownloadProgress;
+	FOnDownloadProgressNative OnDownloadProgress;
 
 public:
-	/**
-	 * File downloading progress internal callback
-	 */
-	void OnProgress_Internal(FHttpRequestPtr Request, int32 BytesSent, int32 BytesReceived) const;
+	UBaseFilesDownloader();
 
 	/**
 	 * Canceling the current download
@@ -41,7 +42,26 @@ public:
 	 * @return Whether the cancellation was successful or not
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Runtime Files Downloader|Main")
-	bool CancelDownload();
+	virtual bool CancelDownload();
+
+	/**
+	 * Get the content length of the file to be downloaded
+	 *
+	 * @param URL The URL of the file to be downloaded
+	 * @param Timeout The maximum time to wait for the download to complete, in seconds. Works only for engine versions >= 4.26
+	 * @param OnComplete Delegate for broadcasting the completion of the download 
+	 */
+	UFUNCTION(BlueprintCallable, Category = "Runtime Files Downloader|Main")
+	static void GetContentSize(const FString& URL, float Timeout, const FOnGetDownloadContentLength& OnComplete);
+
+	/**
+	 * Get the content length of the file to be downloaded. Suitable for use in C++
+	 *
+	 * @param URL The URL of the file to be downloaded
+	 * @param Timeout The maximum time to wait for the download to complete, in seconds. Works only for engine versions >= 4.26
+	 * @param OnComplete Delegate for broadcasting the completion of the download 
+	 */
+	static void GetContentSize(const FString& URL, float Timeout, const FOnGetDownloadContentLengthNative& OnComplete);
 
 	/**
 	 * Convert bytes to string
@@ -112,14 +132,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Runtime Files Downloader|Utilities")
 	static bool IsFileExist(const FString& FilePath);
 
-
 protected:
-	/** Http download request */
-	IHttpRequest* HttpDownloadRequest;
-
 	/**
 	 * Broadcast the progress both multi-cast and single-cast delegates
-	 * @note To get the download percentage, divide the BytesReceived value by the ContentLength
 	 */
-	void BroadcastProgress(const int32 BytesReceived, const int32 ContentLength) const;
+	void BroadcastProgress(int64 BytesReceived, int64 ContentLength, float ProgressRatio) const;
+
+	/** Internal downloader */
+	TSharedPtr<class FRuntimeChunkDownloader> RuntimeChunkDownloaderPtr;
 };

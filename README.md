@@ -1,33 +1,4 @@
-<br/>
-<p align="center">
-  <a href="https://github.com/gtreshchev/runtimefilesdownloader">
-    <img src="Resources/Icon128.png" alt="Logo" width="80" height="80">
-  </a>
+**Important Notice:**  
+This open-source version of the plugin is no longer maintained. It may contain bugs and lack some features. I recommend using the **Fab version** for the most up-to-date features, bug fixes, and ongoing support. The Fab version is available [here](https://www.fab.com/listings/771d5e74-3d7d-49b9-a682-7a6f7f86b94c).
 
-<h3 align="center">Runtime Files Downloader</h3>
-
-  <p align="center">
-    Downloading files over HTTP / HTTPS at runtime.
-    <br/>
-    <br/>
-    <a href="https://github.com/gtreshchev/RuntimeFilesDownloader/wiki"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://unrealengine.com/marketplace/product/runtime-files-downloader">Marketplace</a>
-    .
-    <a href="https://github.com/gtreshchev/runtimefilesdownloader/releases">Releases</a>
-    .
-   <a href="https://t.me/georgydev">Support Chat</a>
-  </p>
-
-## Features
-
-- Low size
-- No any third party libraries and external dependencies
-- Support for all available devices (Android, iOS, Windows, Mac, Linux, etc)
-
-## Legal info
-
-Unreal® is a trademark or registered trademark of Epic Games, Inc. in the United States of America and elsewhere.
-
-Unreal® Engine, Copyright 1998 – 2022, Epic Games, Inc. All rights reserved.
+For support or questions, feel free to join the [Discord chat](https://georgy.dev/discord).

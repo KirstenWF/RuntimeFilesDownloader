@@ -1,4 +1,4 @@
-// Georgy Treshchev 2022.
+// Georgy Treshchev 2024.
 
 #include "RuntimeFilesDownloader.h"
 #include "RuntimeFilesDownloaderDefines.h"

@@ -4,7 +4,9 @@
 
 #include "Modules/ModuleManager.h"
 
-class FRuntimeFilesDownloaderModule : public IModuleInterface
+DECLARE_LOG_CATEGORY_EXTERN(LogRuntimeFilesDownloaderEditor, Log, All);
+
+class FRuntimeFilesDownloaderEditorModule : public IModuleInterface
 {
 public:
 	virtual void StartupModule() override;

@@ -1,4 +1,4 @@
-// Georgy Treshchev 2022.
+// Georgy Treshchev 2024.
 
 using UnrealBuildTool;
 
@@ -18,5 +18,9 @@ public class RuntimeFilesDownloader : ModuleRules
 			}
 		);
 		
+		if (Target.Platform == UnrealTargetPlatform.Android)
+		{
+			PrivateDependencyModuleNames.Add("AndroidPermission");
+		}
 	}
 }
