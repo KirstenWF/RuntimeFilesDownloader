@@ -10,8 +10,8 @@
 			"BaseFilesDownloader.cpp.obj",
 			"FileToMemoryDownloader.cpp.obj",
 			"FileToStorageDownloader.cpp.obj",
-			"RuntimeChunkDownloader.cpp.obj",
-			"RuntimeFilesDownloader.cpp.obj"
+			"RuntimeFilesDownloader.cpp.obj",
+			"RuntimeChunkDownloader.cpp.obj"
 		]
 	}
 }

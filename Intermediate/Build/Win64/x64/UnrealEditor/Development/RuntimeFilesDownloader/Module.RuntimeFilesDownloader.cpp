@@ -7,5 +7,4 @@
 #include "../Plugins/RuntimeFilesDownloader/Source/RuntimeFilesDownloader/Private/BaseFilesDownloader.cpp"
 #include "../Plugins/RuntimeFilesDownloader/Source/RuntimeFilesDownloader/Private/FileToMemoryDownloader.cpp"
 #include "../Plugins/RuntimeFilesDownloader/Source/RuntimeFilesDownloader/Private/FileToStorageDownloader.cpp"
-#include "../Plugins/RuntimeFilesDownloader/Source/RuntimeFilesDownloader/Private/RuntimeChunkDownloader.cpp"
 #include "../Plugins/RuntimeFilesDownloader/Source/RuntimeFilesDownloader/Private/RuntimeFilesDownloader.cpp"
