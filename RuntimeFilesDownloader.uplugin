@@ -14,7 +14,7 @@
   "IsBetaVersion": false,
   "IsExperimentalVersion": false,
   "Installed": false,
-  "EnabledByDefault": true,
+  "EnabledByDefault": false,
   "Modules": [
     {
       "Name": "RuntimeFilesDownloader",
